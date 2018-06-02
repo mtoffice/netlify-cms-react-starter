@@ -102,17 +102,7 @@ class App extends Component {
                 />
               )}
             />
-            <Route
-              path='/lala/'
-              exact
-              render={props => (
-                <Contact
-                  page={this.getDocument('pages', 'contact')}
-                  siteTitle={siteTitle}
-                  {...props}
-                />
-              )}
-            />
+           
 
             {/* Blog Routes */}
             <Route

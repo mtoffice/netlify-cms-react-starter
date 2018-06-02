@@ -36,6 +36,7 @@ const getDocumentExt = filePath => {
 
 const parseMarkdown = data => {
   data = matter(data)
+  console.log(data);
   data = { ...data, ...data.data }
   delete data.data
   return JSON.stringify(data)
